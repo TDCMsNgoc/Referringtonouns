@@ -10,10 +10,15 @@ Phần mềm trắc nghiệm 20 câu hỏi chuyên đề **REFERRING TO NOUNS** 
    - Bộ câu hỏi đầy đủ từ câu 1 đến câu 20.
    - Đáp án chuẩn ngữ pháp tiếng Anh chính xác tuyệt đối.
 
-2. **Bố cục tối ưu riêng cho iPad & Điện thoại**:
+2. **Chế độ xem lại bài (Sau khi nộp bài)**:
+   - **Xem đáp án đúng**: Làm nổi bật đáp án chính xác bằng màu xanh lá (kèm huy hiệu `✓ Đáp án đúng`), đồng thời hiển thị lựa chọn của sinh viên nếu chọn sai (kèm huy hiệu `✗ Lựa chọn của bạn`).
+   - **Dịch nghĩa câu**: Bản dịch tiếng Việt chuẩn xác, tự nhiên, giúp hiểu trọn vẹn ngữ cảnh.
+   - **Giải thích ngữ pháp chuyên sâu**: Phân tích rõ quy tắc ngữ pháp (Mạo từ xác định/bất định/không mạo từ, đại từ nhân xưng, tính từ sở hữu, đại từ chỉ định...).
+   - **Bảo mật trong khi làm bài**: Khi chưa nộp bài, tuyệt đối **không** có bất kỳ gợi ý nào bên cạnh câu hỏi.
+
+3. **Bố cục tối ưu riêng cho iPad & Điện thoại**:
    - **Khung câu hỏi đặt ở bên dưới cùng** khi hiển thị trên điện thoại hoặc iPad (dạng bottom-docked card tiện lợi cho ngón tay thao tác).
-   - **Câu hỏi và toàn bộ 4 lựa chọn (A, B, C, D) cùng nằm gọn trong 1 khung duy nhất**, không bị tách rời hay trôi màn hình.
-   - **Không có bất kỳ gợi ý nào bên cạnh câu hỏi**, đảm bảo tính khách quan khi làm bài thi trắc nghiệm.
+   - **Câu hỏi và toàn bộ các lựa chọn (A, B, C, D) cùng nằm gọn trong 1 khung duy nhất**, kể cả phần giải thích và dịch nghĩa cũng cuộn mượt mà ngay trong khung này.
 
 3. **Tính năng tiện ích**:
    - Thanh tiến độ & bảng số câu 1 đến 20 trực quan (nhấp vào số bất kỳ để chuyển nhanh đến câu đó).

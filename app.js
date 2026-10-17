@@ -1,6 +1,7 @@
 /**
  * Referring to Nouns - Interactive Quiz Application
- * Comprehensive 20-Question Test with iPad/Mobile Bottom Docked Frame
+ * Comprehensive 20-Question Test with Explanations & Vietnamese Translations
+ * Optimized for Desktop, iPad, and Mobile Bottom-Docked Frame
  */
 
 const QUIZ_DATA = [
@@ -13,7 +14,9 @@ const QUIZ_DATA = [
       { key: "C", text: "a" },
       { key: "D", text: "no article" }
     ],
-    answer: "B"
+    answer: "B",
+    translation: "Chúng ta ra ngoài vườn ngồi một lát nhé?",
+    explanation: "Dùng mạo từ xác định \"the\" (\"the garden\") vì trong ngữ cảnh này, khu vườn là đối tượng cụ thể mà cả người nói và người nghe đều biết rõ (khu vườn của ngôi nhà họ đang ở hoặc đang ghé thăm)."
   },
   {
     id: 2,
@@ -24,7 +27,9 @@ const QUIZ_DATA = [
       { key: "C", text: "the" },
       { key: "D", text: "no article" }
     ],
-    answer: "A"
+    answer: "A",
+    translation: "Cô ấy sống ở đường Alexandra. Nơi đó cách không xa một cửa hàng bán đồ cổ.",
+    explanation: "Dùng mạo từ bất định \"an\" trước cụm danh từ đếm được số ít \"antiques shop\" được nhắc đến lần đầu tiên (người nghe chưa xác định cụ thể là tiệm đồ cổ nào), và từ \"antiques\" bắt đầu bằng nguyên âm /æ/."
   },
   {
     id: 3,
@@ -35,7 +40,9 @@ const QUIZ_DATA = [
       { key: "C", text: "a" },
       { key: "D", text: "no article" }
     ],
-    answer: "D"
+    answer: "D",
+    translation: "Chồng tôi sưu tầm đồ cổ. Anh ấy lúc nào cũng đi dự các buổi đấu giá.",
+    explanation: "Không dùng mạo từ (no article) trước danh từ số nhiều \"antiques\" khi mang nghĩa chỉ chung các món đồ cổ (sở thích sưu tầm đồ cổ nói chung, không chỉ đích danh món đồ cổ cụ thể nào)."
   },
   {
     id: 4,
@@ -46,7 +53,9 @@ const QUIZ_DATA = [
       { key: "C", text: "the" },
       { key: "D", text: "no article" }
     ],
-    answer: "A"
+    answer: "A",
+    translation: "Tôi không chắc lắm, nhưng tôi nghĩ mình muốn trở thành một kiến trúc sư khi lớn lên.",
+    explanation: "Trong tiếng Anh, trước danh từ chỉ nghề nghiệp số ít phải dùng mạo từ bất định \"a/an\". Vì danh từ \"architect\" bắt đầu bằng nguyên âm /ɑː/ nên ta dùng \"an\"."
   },
   {
     id: 5,
@@ -57,7 +66,9 @@ const QUIZ_DATA = [
       { key: "C", text: "the" },
       { key: "D", text: "no article" }
     ],
-    answer: "B"
+    answer: "B",
+    translation: "Tôi từng nhìn thấy một chú mèo mặc một chiếc áo khoác màu hồng và đi ủng!",
+    explanation: "Dùng mạo từ bất định \"a\" trước cụm danh từ đếm được số ít \"pink coat\" được đề cập lần đầu tiên, và từ \"pink\" bắt đầu bằng phụ âm /p/."
   },
   {
     id: 6,
@@ -68,7 +79,9 @@ const QUIZ_DATA = [
       { key: "C", text: "a" },
       { key: "D", text: "no article" }
     ],
-    answer: "D"
+    answer: "D",
+    translation: "Bố tôi rất thích nhạc cổ điển và nghe thể loại này suốt ngày.",
+    explanation: "\"Music\" là danh từ không đếm được. Khi diễn đạt sở thích chung đối với một thể loại âm nhạc (\"classical music\" - nhạc cổ điển nói chung), quy tắc ngữ pháp là không dùng mạo từ (no article)."
   },
   {
     id: 7,
@@ -79,7 +92,9 @@ const QUIZ_DATA = [
       { key: "C", text: "a" },
       { key: "D", text: "no article" }
     ],
-    answer: "B"
+    answer: "B",
+    translation: "Đó chính là vấn đề mà tôi đã nói với bạn.",
+    explanation: "Dùng mạo từ xác định \"the\" (\"the problem\") vì danh từ \"problem\" đã được xác định cụ thể bởi mệnh đề quan hệ theo sau (\"I told you about\" - vấn đề mà tôi đã kể cho bạn)."
   },
   {
     id: 8,
@@ -90,7 +105,9 @@ const QUIZ_DATA = [
       { key: "C", text: "him" },
       { key: "D", text: "himself" }
     ],
-    answer: "B"
+    answer: "B",
+    translation: "Ông Chang, với kinh nghiệm làm việc và năng lực của mình, rất xứng đáng được thăng chức.",
+    explanation: "Chỗ trống đứng trước cụm danh từ \"work experience and competence\" nên cần một tính từ sở hữu (possessive adjective) bổ nghĩa. Do chủ ngữ là \"Mr. Chang\" (nam giới, số ít) nên chọn \"his\"."
   },
   {
     id: 9,
@@ -101,7 +118,9 @@ const QUIZ_DATA = [
       { key: "C", text: "they" },
       { key: "D", text: "you" }
     ],
-    answer: "C"
+    answer: "C",
+    translation: "Các chủ doanh nghiệp nên suy nghĩ về những gì họ có thể làm cho cộng đồng.",
+    explanation: "Chỗ trống đóng vai trò đại từ chủ ngữ (subject pronoun) trong mệnh đề danh từ \"what ... can do\", thay thế cho danh từ số nhiều đứng trước là \"Business owners\" (các chủ doanh nghiệp), vì vậy phải dùng \"they\"."
   },
   {
     id: 10,
@@ -112,7 +131,9 @@ const QUIZ_DATA = [
       { key: "C", text: "them" },
       { key: "D", text: "those" }
     ],
-    answer: "D"
+    answer: "D",
+    translation: "Bằng cấp và năng lực chuyên môn của ứng viên thứ nhất vượt trội hơn năng lực của ứng viên thứ hai.",
+    explanation: "Trong cấu trúc so sánh, để tránh lặp lại danh từ số nhiều \"qualifications\", ta dùng đại từ chỉ định thay thế \"those\" (\"those of...\" = \"the qualifications of...\"). Nếu thay cho danh từ số ít thì dùng \"that\"."
   },
   {
     id: 11,
@@ -123,7 +144,9 @@ const QUIZ_DATA = [
       { key: "C", text: "her" },
       { key: "D", text: "its" }
     ],
-    answer: "C"
+    answer: "C",
+    translation: "Ann đang làm bài tập về nhà của cô ấy.",
+    explanation: "Chủ ngữ \"Ann\" là danh từ riêng chỉ nữ giới số ít. Chỗ trống đứng trước danh từ \"homework\" nên cần tính từ sở hữu (possessive adjective) tương ứng là \"her\"."
   },
   {
     id: 12,
@@ -134,7 +157,9 @@ const QUIZ_DATA = [
       { key: "C", text: "herself" },
       { key: "D", text: "them" }
     ],
-    answer: "D"
+    answer: "D",
+    translation: "Sandy đã viết một bức thư cho bố mẹ mình và gửi nó cho họ vào ngày hôm qua.",
+    explanation: "Chỗ trống đứng sau giới từ \"to\" và thay thế cho tân ngữ số nhiều chỉ người đã được nhắc trước đó là \"her parents\" (bố mẹ cô ấy), vì vậy ta dùng đại từ tân ngữ (object pronoun) là \"them\"."
   },
   {
     id: 13,
@@ -145,7 +170,9 @@ const QUIZ_DATA = [
       { key: "C", text: "Then" },
       { key: "D", text: "Those" }
     ],
-    answer: "D"
+    answer: "D",
+    translation: "Những đôi giày kia quá rộng đối với tôi.",
+    explanation: "Danh từ \"shoes\" là danh từ số nhiều. Trong các phương án, chỉ có \"Those\" là từ hạn định chỉ định số nhiều (This/That chỉ dùng cho danh từ số ít; Then là trạng từ chỉ thời gian)."
   },
   {
     id: 14,
@@ -156,7 +183,9 @@ const QUIZ_DATA = [
       { key: "C", text: "they" },
       { key: "D", text: "These" }
     ],
-    answer: "A"
+    answer: "A",
+    translation: "William và Tracy rất yêu quý những chú chó của họ.",
+    explanation: "Cần một tính từ sở hữu (possessive adjective) bổ nghĩa cho danh từ \"dogs\". Chủ ngữ \"William and Tracy\" là ngôi thứ ba số nhiều, nên tính từ sở hữu đúng là \"their\" (\"theirs\" là đại từ sở hữu đứng độc lập, không đi kèm danh từ)."
   },
   {
     id: 15,
@@ -167,7 +196,9 @@ const QUIZ_DATA = [
       { key: "C", text: "These" },
       { key: "D", text: "There" }
     ],
-    answer: "C"
+    answer: "C",
+    translation: "Đây là những cây bút cùng vở ghi của anh ấy.",
+    explanation: "Động từ theo sau là to be số nhiều \"are\". Do đó cần một đại từ chỉ định số nhiều làm chủ ngữ. Trong 4 phương án, chỉ có \"These\" là đại từ chỉ định số nhiều phù hợp (This/That là số ít)."
   },
   {
     id: 16,
@@ -178,7 +209,9 @@ const QUIZ_DATA = [
       { key: "C", text: "his" },
       { key: "D", text: "their" }
     ],
-    answer: "B"
+    answer: "B",
+    translation: "Thầy/Cô giáo đã kể cho chúng tôi nghe một câu chuyện thú vị.",
+    explanation: "Cấu trúc: \"tell + somebody + something\" (kể cho ai điều gì). Vị trí sau động từ \"told\" đóng vai trò là tân ngữ gián tiếp (indirect object), do đó cần đại từ tân ngữ (object pronoun) \"us\" (our/his/their là các tính từ sở hữu)."
   },
   {
     id: 17,
@@ -189,7 +222,9 @@ const QUIZ_DATA = [
       { key: "C", text: "These" },
       { key: "D", text: "Those" }
     ],
-    answer: "C"
+    answer: "C",
+    translation: "Những quả chuối ở đây đã chín vàng, còn những quả chuối ở đằng kia thì vẫn còn xanh.",
+    explanation: "Danh từ \"bananas\" là số nhiều, và vế sau có sự đối lập với \"those bananas over there\" (những quả chuối ở đằng kia - ở khoảng cách xa). Vì vậy vế đầu dùng để chỉ những quả ở gần người nói, dùng đại từ chỉ định số nhiều \"These\"."
   },
   {
     id: 18,
@@ -200,7 +235,9 @@ const QUIZ_DATA = [
       { key: "C", text: "Their" },
       { key: "D", text: "My" }
     ],
-    answer: "A"
+    answer: "A",
+    translation: "Hộp bút của Hoa màu xanh lam. Hộp bút của các bạn cô ấy có màu tím.",
+    explanation: "\"Hoa\" là danh từ riêng chỉ nữ giới số ít. Vị trí cần điền bổ nghĩa cho danh từ \"friends\" (những người bạn của Hoa), do đó dùng tính từ sở hữu \"Her\" (\"Her friends' pencil cases\" = Hộp bút của những người bạn của cô ấy)."
   },
   {
     id: 19,
@@ -211,7 +248,9 @@ const QUIZ_DATA = [
       { key: "C", text: "them" },
       { key: "D", text: "my" }
     ],
-    answer: "D"
+    answer: "D",
+    translation: "Tôi muốn trở thành một giáo viên và chị/em gái của tôi muốn trở thành bác sĩ.",
+    explanation: "Chỗ trống đứng trước danh từ \"sister\" nên cần một tính từ sở hữu (possessive adjective). Với chủ ngữ vế trước là \"I\", tính từ sở hữu tương ứng là \"my\" (\"my sister\" = chị/em gái của tôi)."
   },
   {
     id: 20,
@@ -222,7 +261,9 @@ const QUIZ_DATA = [
       { key: "C", text: "He" },
       { key: "D", text: "Its" }
     ],
-    answer: "A"
+    answer: "A",
+    translation: "Peter vẽ rất chân thực. Đây chính là lý do tại sao cô ấy yêu thích các bức tranh của anh ấy.",
+    explanation: "Cấu trúc: \"This is why + S + V...\" (Đây chính là lý do vì sao...). Đại từ chỉ định \"This\" được dùng để quy chiếu/thay thế cho cả một sự việc hoặc phát biểu đã nêu ở câu liền trước (\"Peter is so realistic\")."
   }
 ];
 
@@ -244,6 +285,12 @@ const optionsGroup = document.getElementById('options-group');
 const answeredCount = document.getElementById('answered-count');
 const progressBarFill = document.getElementById('progress-bar-fill');
 const timerDisplay = document.getElementById('timer-display');
+
+// Explanation Box DOM
+const explanationBox = document.getElementById('explanation-box');
+const expBadge = document.getElementById('exp-badge');
+const expTranslation = document.getElementById('exp-translation');
+const expExplanation = document.getElementById('exp-explanation');
 
 const btnPrev = document.getElementById('btn-prev');
 const btnNext = document.getElementById('btn-next');
@@ -320,15 +367,29 @@ function renderQuestion(index) {
   // Update header info inside question frame
   currentQBadge.textContent = `CÂU ${currentQ.id} / ${QUIZ_DATA.length}`;
   
-  const hasAnswered = !!userAnswers[currentQ.id];
-  statusTag.textContent = hasAnswered ? 'Đã chọn' : 'Chưa làm';
-  if (hasAnswered) {
-    statusTag.classList.add('done');
+  const userChoice = userAnswers[currentQ.id];
+  const hasAnswered = !!userChoice;
+
+  // Status tag update
+  if (!isSubmitted) {
+    statusTag.textContent = hasAnswered ? 'Đã chọn' : 'Chưa làm';
+    statusTag.className = 'status-tag' + (hasAnswered ? ' done' : '');
   } else {
-    statusTag.classList.remove('done');
+    // Review mode status tag
+    const isCorrect = userChoice === currentQ.answer;
+    if (!hasAnswered) {
+      statusTag.textContent = 'Chưa làm';
+      statusTag.className = 'status-tag';
+    } else if (isCorrect) {
+      statusTag.textContent = '✓ Chính xác';
+      statusTag.className = 'status-tag done';
+    } else {
+      statusTag.textContent = '✗ Chưa đúng';
+      statusTag.className = 'status-tag tag-wrong';
+    }
   }
 
-  // Set question text cleanly - NO hints
+  // Set question text cleanly - NO hints during quiz
   questionText.textContent = currentQ.question;
 
   // Render options A, B, C, D
@@ -339,19 +400,22 @@ function renderQuestion(index) {
     optBtn.className = 'option-btn';
     optBtn.dataset.key = opt.key;
 
-    // Check if previously selected
-    const isSelected = userAnswers[currentQ.id] === opt.key;
+    const isSelected = userChoice === opt.key;
     if (isSelected) {
       optBtn.classList.add('selected');
     }
+
+    let badgeHTML = '';
 
     // If already submitted (Review mode)
     if (isSubmitted) {
       optBtn.disabled = true;
       if (opt.key === currentQ.answer) {
         optBtn.classList.add('correct-ans');
+        badgeHTML = `<span class="option-badge-tag badge-correct">✓ Đáp án đúng</span>`;
       } else if (isSelected && opt.key !== currentQ.answer) {
         optBtn.classList.add('wrong-ans');
+        badgeHTML = `<span class="option-badge-tag badge-user-wrong">✗ Lựa chọn của bạn</span>`;
       }
     } else {
       optBtn.addEventListener('click', () => {
@@ -362,17 +426,35 @@ function renderQuestion(index) {
     optBtn.innerHTML = `
       <span class="option-prefix">${opt.key}</span>
       <span class="option-text">${opt.text}</span>
+      ${badgeHTML}
     `;
 
     optionsGroup.appendChild(optBtn);
   });
 
+  // Explanation & Translation Box (Chỉ hiển thị sau khi đã nộp bài)
+  if (isSubmitted) {
+    explanationBox.style.display = 'flex';
+    expBadge.textContent = `Đáp án đúng: ${currentQ.answer}`;
+    expTranslation.textContent = currentQ.translation;
+    expExplanation.textContent = currentQ.explanation;
+  } else {
+    explanationBox.style.display = 'none';
+  }
+
   // Update navigation buttons state
   btnPrev.disabled = index === 0;
-  if (index === QUIZ_DATA.length - 1) {
-    btnNext.innerHTML = `<span>Nộp bài</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>`;
+  if (!isSubmitted) {
+    if (index === QUIZ_DATA.length - 1) {
+      btnNext.innerHTML = `<span>Nộp bài</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>`;
+    } else {
+      btnNext.innerHTML = `<span>Câu tiếp</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>`;
+    }
   } else {
+    // In review mode, button says Câu tiếp until the end
+    btnNext.disabled = index === QUIZ_DATA.length - 1;
     btnNext.innerHTML = `<span>Câu tiếp</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>`;
+    btnSubmit.textContent = 'Xem lại kết quả';
   }
 
   updateProgressUI();
@@ -384,16 +466,6 @@ function selectOption(questionId, selectedKey) {
 
   userAnswers[questionId] = selectedKey;
   renderQuestion(currentIndex);
-
-  // Optional: Auto advance to next question smoothly after 300ms if not on last question
-  /*
-  if (currentIndex < QUIZ_DATA.length - 1) {
-    setTimeout(() => {
-      currentIndex++;
-      renderQuestion(currentIndex);
-    }, 320);
-  }
-  */
 }
 
 // Update Top Progress Bar and Navigator Pills
@@ -431,12 +503,18 @@ function updateProgressUI() {
 
 // Submission Flow
 function handleOpenSubmitModal() {
+  if (isSubmitted) {
+    // Re-open results modal in review mode
+    resultModal.classList.add('show');
+    return;
+  }
+
   const answeredTotal = Object.keys(userAnswers).length;
   const confirmText = document.getElementById('confirm-text');
   if (answeredTotal < QUIZ_DATA.length) {
     confirmText.innerHTML = `Bạn mới hoàn thành <strong>${answeredTotal}/${QUIZ_DATA.length}</strong> câu hỏi.<br>Còn lại <strong>${QUIZ_DATA.length - answeredTotal}</strong> câu chưa chọn. Bạn có chắc muốn nộp bài bây giờ?`;
   } else {
-    confirmText.innerHTML = `Bạn đã hoàn thành đủ <strong>20/20</strong> câu hỏi.<br>Bạn có muốn nộp bài và xem điểm số ngay bây giờ?`;
+    confirmText.innerHTML = `Bạn đã hoàn thành đủ <strong>20/20</strong> câu hỏi.<br>Bạn có muốn nộp bài và xem điểm số, đáp án đúng & giải thích chi tiết ngay bây giờ?`;
   }
   confirmModal.classList.add('show');
 }
@@ -456,6 +534,7 @@ function submitQuiz() {
 
     const item = document.createElement('div');
     item.className = `breakdown-item ${isCorrect ? 'correct' : 'wrong'}`;
+    item.title = 'Nhấp để xem chi tiết câu này';
     item.innerHTML = `
       <span>Câu ${q.id}</span>
       <span>${isCorrect ? '✓ Đúng' : `✗ (${q.answer})`}</span>
@@ -490,6 +569,7 @@ function submitQuiz() {
     resultRating.style.color = '#ef4444';
   }
 
+  btnSubmit.textContent = 'Xem lại kết quả';
   resultModal.classList.add('show');
   renderQuestion(currentIndex);
 }
@@ -500,6 +580,7 @@ function restartQuiz() {
   isSubmitted = false;
   currentIndex = 0;
   resultModal.classList.remove('show');
+  btnSubmit.textContent = 'Nộp bài thi';
 
   // Reset pill styles
   const pills = questionPillGrid.querySelectorAll('.q-pill');
@@ -554,7 +635,7 @@ function setupEventListeners() {
     if (currentIndex < QUIZ_DATA.length - 1) {
       currentIndex++;
       renderQuestion(currentIndex);
-    } else {
+    } else if (!isSubmitted) {
       handleOpenSubmitModal();
     }
   });
@@ -580,7 +661,7 @@ function setupEventListeners() {
 
   // Device Switcher
   document.querySelectorAll('.dev-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
+    btn.addEventListener('click', () => {
       const view = btn.dataset.view;
       setDeviceView(view);
     });

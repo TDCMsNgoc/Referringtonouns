@@ -115,6 +115,27 @@
             <!-- 4 options A, B, C, D will be rendered here -->
           </div>
 
+          <!-- Explanation and Translation Box (Chỉ hiển thị sau khi sinh viên nộp bài) -->
+          <div class="explanation-box" id="explanation-box" style="display: none;">
+            <div class="explanation-header">
+              <div class="exp-title-group">
+                <span class="exp-icon">💡</span>
+                <span class="exp-title">Giải thích chi tiết & Dịch nghĩa</span>
+              </div>
+              <span class="exp-badge" id="exp-badge">Đáp án đúng: B</span>
+            </div>
+            <div class="explanation-body">
+              <div class="exp-item translation-item">
+                <span class="exp-item-label">🇻🇳 Dịch nghĩa:</span>
+                <p class="exp-item-text" id="exp-translation"></p>
+              </div>
+              <div class="exp-item reason-item">
+                <span class="exp-item-label">📚 Giải thích:</span>
+                <p class="exp-item-text" id="exp-explanation"></p>
+              </div>
+            </div>
+          </div>
+
           <!-- Question Card Bottom Actions inside the same frame -->
           <div class="card-footer">
             <button type="button" class="btn-nav" id="btn-prev" disabled>

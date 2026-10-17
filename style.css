@@ -626,6 +626,158 @@ body {
   border-color: var(--danger);
 }
 
+.option-badge-tag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 6px;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.option-badge-tag.badge-correct {
+  background-color: var(--success);
+  color: #fff;
+}
+
+.option-badge-tag.badge-user-wrong {
+  background-color: var(--danger);
+  color: #fff;
+}
+
+/* ==========================================================================
+   EXPLANATION & TRANSLATION BOX (Hiển thị sau khi nộp bài)
+   ========================================================================== */
+.explanation-box {
+  background: linear-gradient(145deg, rgba(79, 70, 229, 0.04), rgba(6, 182, 212, 0.05));
+  border: 1.5px solid rgba(79, 70, 229, 0.25);
+  border-left: 5px solid var(--primary);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: fadeInExp 0.3s ease;
+  margin-top: 4px;
+}
+
+[data-theme="dark"] .explanation-box {
+  background: linear-gradient(145deg, rgba(79, 70, 229, 0.12), rgba(6, 182, 212, 0.08));
+  border-color: rgba(99, 102, 241, 0.4);
+  border-left-color: #818cf8;
+}
+
+@keyframes fadeInExp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.explanation-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed var(--border-color);
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.exp-title-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.exp-icon {
+  font-size: 1.15rem;
+}
+
+.exp-title {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+}
+
+.exp-badge {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+}
+
+.explanation-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.exp-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.exp-item-label {
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+[data-theme="dark"] .exp-item-label {
+  color: #a5b4fc;
+}
+
+.exp-item-text {
+  font-size: 0.94rem;
+  line-height: 1.6;
+  color: var(--text-main);
+}
+
+.translation-item .exp-item-text {
+  font-style: italic;
+  font-weight: 600;
+  color: #047857;
+  background-color: rgba(16, 185, 129, 0.08);
+  padding: 8px 12px;
+  border-radius: 8px;
+  border-left: 3px solid #10b981;
+}
+
+[data-theme="dark"] .translation-item .exp-item-text {
+  color: #6ee7b7;
+  background-color: rgba(16, 185, 129, 0.15);
+}
+
+.reason-item .exp-item-text {
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.status-tag.tag-wrong {
+  background-color: var(--danger-light);
+  color: #991b1b;
+}
+
+[data-theme="dark"] .status-tag.tag-wrong {
+  background-color: rgba(239, 68, 68, 0.25);
+  color: #f87171;
+}
+
 /* Bottom Card Footer Actions inside the same frame */
 .card-footer {
   display: flex;
