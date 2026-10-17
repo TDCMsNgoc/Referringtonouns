@@ -133,18 +133,28 @@ body {
 .nav-brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
-.badge-topic {
-  background: linear-gradient(135deg, #4f46e5, #7c3aed);
-  color: #fff;
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  padding: 4px 8px;
-  border-radius: 6px;
-  text-transform: uppercase;
+.school-logo {
+  height: 42px;
+  width: auto;
+  max-width: 175px;
+  object-fit: contain;
+  display: block;
+  transition: all var(--transition-fast);
+}
+
+[data-theme="dark"] .school-logo {
+  background-color: rgba(255, 255, 255, 0.94);
+  padding: 3px 8px;
+  border-radius: 8px;
+}
+
+.brand-divider {
+  width: 1.5px;
+  height: 28px;
+  background-color: var(--border-color);
 }
 
 .nav-brand h1 {
@@ -940,8 +950,13 @@ body {
     font-size: 0.98rem;
   }
 
-  .badge-topic {
-    display: none;
+  .school-logo {
+    height: 32px;
+    max-width: 125px;
+  }
+
+  .brand-divider {
+    height: 20px;
   }
 
   .device-switch-group {
@@ -1047,8 +1062,13 @@ body {
   font-size: 0.95rem;
 }
 
-.app-root.mobile-mode .badge-topic {
-  display: none;
+.app-root.mobile-mode .school-logo {
+  height: 32px;
+  max-width: 125px;
+}
+
+.app-root.mobile-mode .brand-divider {
+  height: 20px;
 }
 
 .app-root.mobile-mode .upper-section {

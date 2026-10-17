@@ -59,6 +59,7 @@ REFERRING TO NOUNS/
 ├── index.html       # Giao diện HTML chuẩn cấu trúc
 ├── style.css        # Kiểu dáng CSS responsive (Desktop, iPad, Mobile)
 ├── app.js           # Dữ liệu 20 câu hỏi & logic trắc nghiệm
+├── tdc_logo.png     # Logo chính thức Trường Cao đẳng Công nghệ Thủ Đức (TDC)
 ├── server.ps1       # Web server cục bộ viết bằng PowerShell
 ├── run_local.bat    # File kích hoạt máy chủ bằng 1 click
 └── README.md        # Tài liệu hướng dẫn sử dụng
